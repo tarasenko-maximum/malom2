@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MALOM INVEST — A Living Document | Homes That Live With You</title>
+<meta name="description" content="MALOM INVEST builds residences of timeless materials and architectural integrity — homes designed as anchors in a transient world. An archival perspective on modern living."/>
+<meta name="theme-color" content="#F4ECDD"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="MALOM INVEST — A Living Document"/>
+<meta property="og:description" content="Homes that live with you. Timeless materials, architectural integrity, emotional resonance, legacy investments."/>
+<meta property="og:image" content="assets/images/home-architecture.png"/>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='-40%20-30%20440%20440'%3E%3Crect%20x='-40'%20y='-30'%20width='440'%20height='440'%20fill='%23F4ECDD'/%3E%3Cg%20fill='%234A6C8C'%3E%3Crect%20width='90'%20height='235'/%3E%3Cpolygon%20points='0,0%2090,0%20245,235%20155,235'/%3E%3Cpolygon%20points='360,0%20270,0%20115,235%20205,235'/%3E%3Crect%20x='270'%20width='90'%20height='380'/%3E%3Crect%20x='150'%20y='300'%20width='210'%20height='80'/%3E%3C/g%3E%3Cpolygon%20fill='%239D9C90'%20points='95,252%20143,300%2095,348%2047,300'/%3E%3C/svg%3E"/>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=IBM+Plex+Mono:wght@300;400;500&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "inverse-primary": "#ffb4a8",
+          "primary-fixed": "#ffdad4",
+          "surface-dim": "#e7d6d4",
+          "secondary": "#57624a",
+          "on-secondary-fixed": "#151e0c",
+          "primary-container": "#8b3a2f",
+          "primary": "#6d241b",
+          "on-tertiary-fixed": "#201b0c",
+          "inverse-surface": "#382e2d",
+          "surface-container-lowest": "#ffffff",
+          "on-primary-fixed-variant": "#7b2e24",
+          "secondary-fixed-dim": "#bfcbae",
+          "inverse-on-surface": "#ffedea",
+          "on-surface": "#221a18",
+          "on-tertiary-fixed-variant": "#4c4634",
+          "on-secondary-fixed-variant": "#3f4a34",
+          "secondary-fixed": "#dbe7c9",
+          "surface-container-low": "#fff0ee",
+          "surface-container": "#fceae7",
+          "outline-variant": "#dbc1bd",
+          "on-background": "#221a18",
+          "surface-bright": "#fff8f6",
+          "surface-container-highest": "#f0dfdc",
+          "background": "#fff8f6",
+          "on-secondary-container": "#5b664e",
+          "outline": "#88726f",
+          "on-secondary": "#ffffff",
+          "on-error-container": "#93000a",
+          "on-primary-container": "#ffb6aa",
+          "error": "#ba1a1a",
+          "secondary-container": "#d8e4c6",
+          "on-tertiary": "#ffffff",
+          "on-primary-fixed": "#3f0301",
+          "tertiary": "#413c2a",
+          "on-tertiary-container": "#d0c7af",
+          "error-container": "#ffdad6",
+          "primary-fixed-dim": "#ffb4a8",
+          "on-primary": "#ffffff",
+          "surface": "#fff8f6",
+          "tertiary-container": "#595340",
+          "surface-container-high": "#f6e4e2",
+          "surface-variant": "#f0dfdc",
+          "on-error": "#ffffff",
+          "tertiary-fixed-dim": "#cfc6ae",
+          "on-surface-variant": "#554240",
+          "surface-tint": "#994539",
+          "tertiary-fixed": "#ece2c9",
+          "bone": "#F4ECDD",
+          "parchment": "#E0D4BA",
+          "brass": "#B59E6D",
+          "terracotta": "#994539",
+          "ink": "#221A18",
+          "sage": "#BFCBAE",
+          "forest": "#3F4A34",
+          "malom-blue": "#4A6C8C",
+          "malom-grey": "#9D9C90"
+        },
+        fontFamily: {
+          "headline-md": ["EB Garamond", "serif"],
+          "label-caps": ["IBM Plex Mono", "monospace"],
+          "body-md": ["EB Garamond", "serif"],
+          "display-lg": ["EB Garamond", "serif"],
+          "label-sm": ["IBM Plex Mono", "monospace"],
+          "headline-lg": ["EB Garamond", "serif"]
+        },
+        fontSize: {
+          "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "500" }],
+          "label-caps": ["12px", { lineHeight: "1.5", letterSpacing: "0.15em", fontWeight: "500" }],
+          "body-md": ["17px", { lineHeight: "1.6", fontWeight: "400" }],
+          "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "400" }],
+          "label-sm": ["10px", { lineHeight: "1.4", letterSpacing: "0.1em", fontWeight: "400" }],
+          "headline-lg": ["32px", { lineHeight: "1.2", fontWeight: "400" }]
+        },
+        spacing: {
+          "margin-desktop": "80px",
+          "margin-mobile": "24px",
+          "section-gap": "160px",
+          "gutter": "32px"
+        }
+      }
+    }
+  };
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: #F4ECDD;
+    color: #221A18;
+    overflow-x: hidden;
+    font-family: 'EB Garamond', serif;
+  }
+
+  /* Generous editorial margins per DESIGN.md (80px desktop / 24px mobile) */
+  .px-margin-desktop { padding-left: 24px; padding-right: 24px; }
+  .px-margin-mobile { padding-left: 24px; padding-right: 24px; }
+  @media (min-width: 768px) {
+    .px-margin-desktop { padding-left: 80px; padding-right: 80px; }
+  }
+
+  /* Vertical rhythm — large unhurried section gaps */
+  .py-section-gap { padding-top: 96px; padding-bottom: 96px; }
+  @media (min-width: 768px) {
+    .py-section-gap { padding-top: 160px; padding-bottom: 160px; }
+  }
+
+  .gap-gutter { gap: 32px; }
+
+  /* Display scales down on small screens */
+  .text-display-lg { font-size: 40px; line-height: 1.1; letter-spacing: -0.02em; }
+  @media (min-width: 768px) {
+    .text-display-lg { font-size: 64px; }
+  }
+
+  /* 1. Perpetual paper grain overlay */
+  .paper-grain {
+    position: fixed; inset: 0;
+    pointer-events: none; z-index: 9999;
+    opacity: 0.06;
+    background-image: url("https://www.transparenttextures.com/patterns/felt.png");
+    animation: grain-shimmer 30s steps(10) infinite;
+  }
+  @keyframes grain-shimmer {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    10% { transform: translate(-1%, -1%) scale(1.02); }
+    20% { transform: translate(1%, 1%) scale(1.01); }
+    30% { transform: translate(-2%, 1%) scale(1.03); }
+    40% { transform: translate(1%, -2%) scale(1.02); }
+    50% { transform: translate(-1.5%, -1.5%) scale(1.01); }
+    60% { transform: translate(2%, -1%) scale(1.03); }
+    70% { transform: translate(-1%, 2%) scale(1.02); }
+    80% { transform: translate(1.5%, 1.5%) scale(1.01); }
+    90% { transform: translate(-2%, -1%) scale(1.02); }
+  }
+
+  /* Roman numeral watermark with ink-bleed reveal */
+  .roman-watermark {
+    font-size: 40vw; line-height: 1;
+    color: rgba(34, 26, 24, 0.03);
+    position: absolute; z-index: -1; pointer-events: none;
+    font-family: 'EB Garamond', serif;
+    opacity: 0;
+    transition: opacity 1.2s ease-out;
+    -webkit-mask-image: linear-gradient(to right, black 0%, transparent 100%);
+    mask-image: linear-gradient(to right, black 0%, transparent 100%);
+    -webkit-mask-size: 200% 100%; mask-size: 200% 100%;
+    -webkit-mask-position: 100% 0%; mask-position: 100% 0%;
+  }
+  .roman-watermark.revealed { opacity: 1; animation: ink-bleed 1.8s forwards ease-out; }
+  @keyframes ink-bleed { to { -webkit-mask-position: 0% 0%; mask-position: 0% 0%; } }
+
+  .deckled-edge {
+    clip-path: polygon(0 2%, 5% 0, 10% 2%, 15% 0, 20% 2%, 25% 0, 30% 2%, 35% 0, 40% 2%, 45% 0, 50% 2%, 55% 0, 60% 2%, 65% 0, 70% 2%, 75% 0, 80% 2%, 85% 0, 90% 2%, 95% 0, 100% 2%, 100% 98%, 95% 100%, 90% 98%, 85% 100%, 80% 98%, 75% 100%, 70% 98%, 65% 100%, 60% 98%, 55% 100%, 50% 98%, 45% 100%, 40% 98%, 35% 100%, 30% 98%, 25% 100%, 20% 98%, 15% 100%, 10% 98%, 5% 100%, 0 98%);
+  }
+
+  /* Slow archival ticker */
+  .ticker-scroll { animation: ticker 60s linear infinite; }
+  @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  .brass-seal {
+    width: 12px; height: 12px;
+    background: #B59E6D; border-radius: 50%;
+    box-shadow: 0 0 10px rgba(181, 158, 109, 0.4);
+    position: absolute; transform: translate(-50%, -50%);
+    cursor: help;
+  }
+  .brass-seal::after {
+    content: ''; position: absolute; inset: -6px;
+    border: 1px solid rgba(181, 158, 109, 0.5); border-radius: 50%;
+    animation: seal-pulse 3s ease-out infinite;
+  }
+  @keyframes seal-pulse {
+    0% { transform: scale(0.6); opacity: 0.8; }
+    100% { transform: scale(1.8); opacity: 0; }
+  }
+
+  .journal-entry::before {
+    content: ''; position: absolute;
+    left: -20px; top: 10px;
+    width: 2px; height: 100%;
+    background: #B59E6D; opacity: 0.3;
+  }
+
+  /* Scroll reveal */
+  .reveal-text {
+    opacity: 0; transform: translateY(20px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+  .reveal-text.revealed { opacity: 1; transform: translateY(0); }
+
+  .image-reveal {
+    opacity: 0; filter: sepia(0.5) brightness(1.2) blur(5px);
+    transition: opacity 1s ease-out, filter 1.2s ease-out;
+  }
+  .image-reveal.revealed { opacity: 1; filter: sepia(0) brightness(1) blur(0); }
+
+  /* Custom cursor (desktop, fine-pointer only) */
+  #custom-cursor, #custom-cursor-trail {
+    width: 8px; height: 8px; border-radius: 50%;
+    background-color: #221A18;
+    position: fixed; left: 0; top: 0;
+    pointer-events: none; display: none;
+  }
+  #custom-cursor { z-index: 10000; transition: transform 0.1s ease-out, background-color 0.3s ease; }
+  #custom-cursor-trail { z-index: 9998; opacity: 0.3; transition: transform 0.2s ease-out; }
+  .interactive-hover #custom-cursor { transform: scale(3) !important; background-color: #B59E6D; }
+
+  @media (hover: hover) and (pointer: fine) {
+    body.cursor-ready { cursor: none; }
+    body.cursor-ready #custom-cursor,
+    body.cursor-ready #custom-cursor-trail { display: block; }
+  }
+
+  /* Mobile menu */
+  #mobile-menu { transition: opacity 0.4s ease, visibility 0.4s ease; }
+  #mobile-menu.hidden-menu { opacity: 0; visibility: hidden; pointer-events: none; }
+
+  /* Honour reduced-motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-scroll, .paper-grain, .roman-watermark, .brass-seal::after { animation: none !important; }
+    .reveal-text, .image-reveal { opacity: 1 !important; transform: none !important; filter: none !important; }
+    html { scroll-behavior: auto; }
+  }
+
+  ::selection { background: #994539; color: #F4ECDD; }
+
+  /* ===== Brand logo lockups ===== */
+  .brand-lockup { display: inline-flex; align-items: center; gap: 12px; line-height: 1; }
+  .brand-mark { display: block; width: auto; flex: none; }
+  .wordmark { font-family: 'Jost', sans-serif; display: flex; flex-direction: column; }
+  .wordmark .wm-name {
+    font-weight: 500; letter-spacing: 0.14em;
+    color: #6f6e62;            /* warm grey, deepened for legibility on bone */
+  }
+  .wordmark .wm-sub {
+    font-weight: 400; letter-spacing: 0.42em;
+    color: #4A6C8C; align-self: flex-end; margin-top: 2px;
+  }
+  /* Tatar Hill estate lockup (stacked, centered) */
+  .estate-lockup { font-family: 'Jost', sans-serif; }
+  .estate-lockup .est-name { letter-spacing: 0.45em; font-weight: 300; }
+</style>
+</head>
+
+<body class="antialiased">
+<div class="paper-grain" aria-hidden="true"></div>
+<div id="custom-cursor" aria-hidden="true"></div>
+<div id="custom-cursor-trail" aria-hidden="true"></div>
+
+<!-- ===== Top App Bar ===== -->
+<nav class="fixed top-0 w-full h-[60px] bg-bone/90 backdrop-blur-sm border-b border-outline-variant z-50 flex justify-between items-center px-margin-desktop">
+  <a href="#idea" class="brand-lockup" aria-label="MALOM INVEST — home">
+    <svg class="brand-mark h-8 md:h-9" viewBox="0 0 360 380" aria-hidden="true">
+      <g fill="#4A6C8C">
+        <rect x="0" y="0" width="90" height="235"/>
+        <polygon points="0,0 90,0 245,235 155,235"/>
+        <polygon points="360,0 270,0 115,235 205,235"/>
+        <rect x="270" y="0" width="90" height="380"/>
+        <rect x="150" y="300" width="210" height="80"/>
+      </g>
+      <polygon fill="#9D9C90" points="95,252 143,300 95,348 47,300"/>
+    </svg>
+    <span class="wordmark">
+      <span class="wm-name text-[17px] md:text-[19px]">MALOM</span>
+      <span class="wm-sub text-[8px] md:text-[9px]">INVEST</span>
+    </span>
+  </a>
+  <div class="hidden lg:flex gap-8 items-center" id="desktop-nav">
+    <a class="font-label-sm text-label-sm uppercase tracking-widest text-primary border-b border-primary transition-colors" href="#idea">I. IDEA</a>
+    <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#homes">II. HOMES</a>
+    <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#principles">III. PRINCIPLES</a>
+    <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#place">IV. PLACE</a>
+    <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#world">V. WORLD</a>
+    <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#future">VI. FUTURE</a>
+    <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#conversation">VII. CONVERSATION</a>
+  </div>
+  <div class="flex items-center gap-4">
+    <a href="#conversation" class="hidden sm:inline-block font-label-sm text-label-sm uppercase tracking-widest px-6 py-2 border border-ink hover:bg-ink hover:text-bone transition-all duration-300">INQUIRE</a>
+    <!-- Mobile menu toggle -->
+    <button id="menu-toggle" class="lg:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="block w-6 h-px bg-ink transition-transform"></span>
+      <span class="block w-6 h-px bg-ink transition-opacity"></span>
+      <span class="block w-6 h-px bg-ink transition-transform"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== Mobile Menu ===== -->
+<div id="mobile-menu" class="hidden-menu fixed inset-0 z-40 bg-bone/98 backdrop-blur-md flex flex-col justify-center items-center gap-8 lg:hidden">
+  <a class="font-label-caps text-label-caps uppercase tracking-widest text-primary mobile-link" href="#idea">I. IDEA</a>
+  <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mobile-link" href="#homes">II. HOMES</a>
+  <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mobile-link" href="#principles">III. PRINCIPLES</a>
+  <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mobile-link" href="#place">IV. PLACE</a>
+  <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mobile-link" href="#world">V. WORLD</a>
+  <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mobile-link" href="#future">VI. FUTURE</a>
+  <a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mobile-link" href="#conversation">VII. CONVERSATION</a>
+  <a href="#conversation" class="mt-6 font-label-sm text-label-sm uppercase tracking-widest px-8 py-3 border border-ink mobile-link">INQUIRE</a>
+</div>
+
+<!-- ===== Chapter I — HERO ===== -->
+<header class="relative min-h-screen pt-[100px] md:pt-[60px] flex items-center overflow-hidden" id="idea">
+  <div class="roman-watermark top-10 -left-10 select-none" aria-hidden="true">I</div>
+  <div class="max-w-7xl mx-auto px-margin-desktop grid md:grid-cols-12 gap-gutter items-center w-full py-16 md:py-0">
+    <div class="md:col-span-6 space-y-10 md:space-y-12">
+      <p class="font-label-caps text-label-caps text-brass reveal-text">CHAPTER I — THE IDEA</p>
+      <h1 class="font-display-lg text-display-lg italic leading-[1.1] reveal-text">
+        Homes that live<br/> with you.
+      </h1>
+      <div class="flex items-center gap-6 reveal-text">
+        <div class="w-24 h-px bg-brass"></div>
+        <p class="font-label-caps text-label-caps text-on-surface-variant">AN ARCHIVAL PERSPECTIVE ON MODERN LIVING</p>
+      </div>
+      <a href="#homes" class="reveal-text inline-block font-label-caps text-label-caps uppercase tracking-widest px-8 py-3 bg-terracotta text-bone hover:bg-primary transition-colors duration-300">
+        BEGIN THE DOCUMENT
+      </a>
+    </div>
+    <div class="md:col-span-6 relative">
+      <div class="border-[8px] md:border-[12px] border-brass/20 p-3 md:p-4 image-reveal">
+        <img alt="Minimalist residence of natural stone and timber set into a wild Fruška Gora hillside at golden hour" class="w-full h-[380px] md:h-[600px] object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" src="assets/images/home-architecture.png"/>
+      </div>
+      <div class="absolute -bottom-6 -right-3 md:-bottom-8 md:-right-8 w-32 h-32 md:w-40 md:h-40 border border-brass flex flex-col items-center justify-center bg-bone text-ink font-label-caps text-[10px] text-center p-4 reveal-text gap-1">
+        <svg class="h-7 w-auto mb-1" viewBox="0 0 300 320" aria-hidden="true">
+          <g fill="#9D9C90">
+            <rect x="18" y="15" width="264" height="52"/>
+            <polygon points="124,67 176,67 176,162 158,162 158,150 142,150 142,162 124,162"/>
+            <rect x="60" y="100" width="52" height="205"/>
+            <rect x="188" y="100" width="52" height="205"/>
+            <rect x="60" y="210" width="180" height="52"/>
+            <polygon points="150,266 176,292 150,318 124,292"/>
+          </g>
+        </svg>
+        TATARHILL<br/> ESTATE NO. 001/24
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== USP Ticker ===== -->
+<div class="w-full bg-forest py-4 overflow-hidden border-y border-brass/30">
+  <div class="flex whitespace-nowrap ticker-scroll" aria-hidden="true">
+    <span class="font-label-caps text-label-caps text-bone mx-12">TIMELESS MATERIALS — ARCHITECTURAL INTEGRITY — EMOTIONAL RESONANCE — LEGACY INVESTMENTS —</span>
+    <span class="font-label-caps text-label-caps text-bone mx-12">TIMELESS MATERIALS — ARCHITECTURAL INTEGRITY — EMOTIONAL RESONANCE — LEGACY INVESTMENTS —</span>
+    <span class="font-label-caps text-label-caps text-bone mx-12">TIMELESS MATERIALS — ARCHITECTURAL INTEGRITY — EMOTIONAL RESONANCE — LEGACY INVESTMENTS —</span>
+    <span class="font-label-caps text-label-caps text-bone mx-12">TIMELESS MATERIALS — ARCHITECTURAL INTEGRITY — EMOTIONAL RESONANCE — LEGACY INVESTMENTS —</span>
+  </div>
+</div>
+
+<!-- ===== Chapter II — HOMES ===== -->
+<section class="py-section-gap relative" id="homes">
+  <div class="roman-watermark -top-20 right-0 select-none" aria-hidden="true">II</div>
+  <div class="max-w-7xl mx-auto px-margin-desktop">
+    <div class="flex flex-col md:flex-row gap-16 md:gap-32">
+      <div class="md:w-1/3">
+        <span class="font-headline-md text-[80px] md:text-[120px] leading-none opacity-10 reveal-text block">II</span>
+        <h2 class="font-headline-lg text-headline-lg italic mt-4 reveal-text">Two ways to come home.</h2>
+        <p class="mt-8 font-body-md text-body-md text-on-surface-variant max-w-sm reveal-text">
+          Whether overlooking the quiet pulse of a city or the deep silence of the hills, our homes are designed as anchors in a transient world.
+        </p>
+      </div>
+      <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-12 md:pt-24">
+        <article class="group relative bg-parchment p-6 md:p-8 shadow-sm hover:-translate-y-4 transition-transform duration-500 reveal-text">
+          <div class="absolute -top-12 left-0 font-label-caps text-brass text-[40px] opacity-30 italic">II·I</div>
+          <h3 class="font-label-caps text-label-caps mb-4">THE HILLSIDE</h3>
+          <div class="aspect-[3/4] bg-ink overflow-hidden image-reveal">
+            <img alt="Stone-and-timber hillside villa wrapped in wild meadow grasses, glass façade catching the low morning sun" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="assets/images/home-architecture.png"/>
+          </div>
+          <p class="mt-4 font-body-md text-body-md text-on-surface-variant">Rooted in wild terrain. Built of stone that has waited centuries for its place.</p>
+        </article>
+        <article class="group relative bg-parchment p-6 md:p-8 shadow-sm sm:translate-y-12 hover:sm:translate-y-8 hover:-translate-y-4 sm:hover:-translate-y-0 transition-transform duration-500 reveal-text">
+          <div class="absolute -top-12 left-0 font-label-caps text-brass text-[40px] opacity-30 italic">II·II</div>
+          <h3 class="font-label-caps text-label-caps mb-4">THE URBAN</h3>
+          <div class="aspect-[3/4] bg-ink overflow-hidden image-reveal">
+            <img alt="Sophisticated urban residence with dark timber accents overlooking a historic European skyline at dusk" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcALb3_tBBpqoL4j4wEVIPkw9uOwtMYx4B5aIiD0EBxG3KSL7-Wx6bp19vsa8VAOI3avluUdER4YVIrAJsXvRqz6-scod0ADw2CJwIYJ7louurYuGMCB3lqnuhNY_JVfNPtKM9gT0u858McEiY61_o5GHh05NWDgszRNBON3TMmZmZOu6vuPlTvErGvxEaRumrrzsTUT_MIrfJ_0Spueek-56RKEa2gdqoIiPMf14abmdFxOQbkhnfMsgMs7AT4WVCfLZteo51zIY" onerror="this.onerror=null;this.src='assets/images/home-architecture.png';"/>
+          </div>
+          <p class="mt-4 font-body-md text-body-md text-on-surface-variant">A quiet retreat above the city — discreet, considered, enduring.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Chapter III — PRINCIPLES ===== -->
+<section class="bg-parchment py-section-gap relative overflow-hidden" id="principles">
+  <div class="roman-watermark -top-20 -right-20 select-none" aria-hidden="true">III</div>
+  <div class="max-w-7xl mx-auto px-margin-desktop">
+    <div class="mb-16 md:mb-24 reveal-text">
+      <p class="font-label-caps text-label-caps text-brass">CHAPTER III — THE PRINCIPLES</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-16 md:gap-24">
+      <div class="space-y-8 reveal-text">
+        <h3 class="font-label-caps text-label-caps border-b border-brass pb-4">01. MATERIALS</h3>
+        <p class="font-body-md text-body-md leading-relaxed">
+          <span class="text-terracotta text-5xl float-left mr-4 mt-2 font-headline-md italic leading-none">O</span>
+          ur stone is sourced from quarries that have whispered to the earth for centuries. We do not use composites; we use truth. Tactile, heavy, and honest.
+        </p>
+      </div>
+      <div class="space-y-8 reveal-text">
+        <h3 class="font-label-caps text-label-caps border-b border-brass pb-4">02. INTELLIGENCE</h3>
+        <p class="font-body-md text-body-md leading-relaxed">
+          <span class="text-terracotta text-5xl float-left mr-4 mt-2 font-headline-md italic leading-none">A</span>
+          technology that remains invisible until required. We believe in the “Quiet Home” — one that anticipates needs without a single glowing screen to disrupt your peace.
+        </p>
+      </div>
+      <div class="space-y-8 reveal-text">
+        <h3 class="font-label-caps text-label-caps border-b border-brass pb-4">03. OUTLAST</h3>
+        <p class="font-body-md text-body-md leading-relaxed">
+          <span class="text-terracotta text-5xl float-left mr-4 mt-2 font-headline-md italic leading-none">W</span>
+          e build for the century, not the season. Every joint, every seal, and every finish is designed to age with a dignity that modern construction has long forgotten.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Chapter IV — PLACE ===== -->
+<section class="bg-forest text-bone py-section-gap relative overflow-hidden" id="place">
+  <div class="max-w-4xl mx-auto px-margin-mobile text-center mb-16 md:mb-24 reveal-text">
+    <div class="inline-block px-4 py-1 border border-brass text-brass font-label-caps text-[10px] mb-8">CHAPTER IV</div>
+    <p class="font-display-lg italic text-[32px] sm:text-[42px] md:text-[64px] leading-tight">
+      “At a thousand feet —<br/> above the noise.”
+    </p>
+    <!-- Flagship estate lockup -->
+    <div class="estate-lockup flex flex-col items-center gap-4 mt-14 reveal-text">
+      <svg class="h-16 md:h-20 w-auto" viewBox="0 0 300 320" aria-label="Tatar Hill">
+        <g fill="#C7C3B4">
+          <rect x="18" y="15" width="264" height="52"/>
+          <polygon points="124,67 176,67 176,162 158,162 158,150 142,150 142,162 124,162"/>
+          <rect x="60" y="100" width="52" height="205"/>
+          <rect x="188" y="100" width="52" height="205"/>
+          <rect x="60" y="210" width="180" height="52"/>
+          <polygon points="150,266 176,292 150,318 124,292"/>
+        </g>
+      </svg>
+      <span class="est-name text-bone text-2xl md:text-3xl mt-2">TATARHILL</span>
+      <span class="font-label-caps text-[10px] text-brass tracking-[0.3em]">THE FLAGSHIP ESTATE · FRUŠKA GORA</span>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-margin-desktop">
+    <div class="relative group reveal-text">
+      <div class="absolute -inset-4 border border-brass/20 pointer-events-none group-hover:inset-0 transition-all duration-700"></div>
+      <img alt="Aerial view of the misty Fruška Gora slopes at dawn, soft fog pooling between forested ridges and vineyards" class="w-full h-[45vh] md:h-[60vh] object-cover deckled-edge filter sepia-[0.3] brightness-75 group-hover:brightness-100 transition-all duration-1000 image-reveal" src="assets/images/landscape-fruska-gora.png"/>
+    </div>
+    <div class="mt-10 md:mt-12 flex flex-col sm:flex-row gap-4 justify-between sm:items-end border-t border-brass/30 pt-8">
+      <div class="font-label-caps text-[10px] tracking-widest text-brass">LAT: 45.1599° N / LON: 19.7050° E</div>
+      <div class="font-body-md italic opacity-60">The first breath of morning air over the Fruška Gora ridge.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Chapter V — WORLD ===== -->
+<section class="py-section-gap bg-bone" id="world">
+  <div class="max-w-7xl mx-auto px-margin-desktop">
+    <div class="flex items-center gap-6 md:gap-12 mb-16 md:mb-24 reveal-text">
+      <h2 class="font-display-lg text-headline-lg italic whitespace-nowrap">The World Documented</h2>
+      <div class="flex-grow h-px bg-ink/10"></div>
+      <div class="font-label-caps text-brass hidden sm:block">V. GEOGRAPHY</div>
+    </div>
+    <div class="relative w-full aspect-[16/10] md:aspect-[16/9] border border-brass/40 p-4 md:p-8 overflow-hidden bg-parchment/30 image-reveal">
+      <img alt="Hand-inked vintage cartographic world map in fine black line style on aged parchment" class="w-full h-full object-contain opacity-80 mix-blend-multiply" src="assets/images/world-map.png"/>
+      <!-- Brass markers -->
+      <div class="brass-seal" style="top: 45%; left: 55%;" title="Cyprus"></div>
+      <div class="brass-seal" style="top: 25%; left: 48%;" title="Sweden"></div>
+      <div class="brass-seal" style="top: 35%; left: 51%;" title="Poland"></div>
+      <div class="brass-seal" style="top: 48%; left: 62%;" title="UAE"></div>
+      <div class="brass-seal" style="top: 38%; left: 53%;" title="Serbia"></div>
+      <div class="absolute bottom-6 right-6 md:bottom-12 md:right-12 w-44 md:w-48 font-label-caps text-[9px] leading-relaxed text-ink/60">
+        <p class="mb-2 text-ink">ACTIVE PROJECTS:</p>
+        CYPRUS, SWEDEN, POLAND, UAE, SERBIA. EACH COORDINATE HAND-SELECTED FOR TOPOGRAPHICAL SUPERIORITY.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Chapter VI — FUTURE ===== -->
+<section class="bg-sage/20 py-section-gap border-y border-brass/20" id="future">
+  <div class="max-w-5xl mx-auto px-margin-desktop">
+    <div class="text-center mb-20 md:mb-32 reveal-text">
+      <span class="font-label-caps text-brass tracking-[0.3em]">PROMISES WE ARE ALREADY KEEPING</span>
+    </div>
+    <div class="space-y-20 md:space-y-32">
+      <div class="journal-entry relative pl-12 reveal-text">
+        <div class="font-label-caps text-ink/40 mb-2">OCTOBER 14, 2023</div>
+        <h3 class="font-headline-md italic mb-4">Reclaiming the Forest Edge</h3>
+        <p class="font-body-md text-on-surface-variant max-w-2xl">
+          Today we began the transplanting of 400 native oaks. A house should not just occupy land; it should be welcomed by the flora that preceded it. Our commitment to 1:10 reforestation remains absolute.
+        </p>
+      </div>
+      <div class="journal-entry relative pl-12 reveal-text">
+        <div class="font-label-caps text-ink/40 mb-2">JANUARY 02, 2024</div>
+        <h3 class="font-headline-md italic mb-4">The Silence Coefficient</h3>
+        <p class="font-body-md text-on-surface-variant max-w-2xl">
+          Acoustic testing completed at the Valley House. We have achieved a 45dB reduction from ambient exterior noise — creating a true sanctuary of stillness. Peace is the ultimate luxury.
+        </p>
+      </div>
+      <div class="journal-entry relative pl-12 reveal-text">
+        <div class="font-label-caps text-ink/40 mb-2">MAY 21, 2024</div>
+        <h3 class="font-headline-md italic mb-4">Legacy of Craft</h3>
+        <p class="font-body-md text-on-surface-variant max-w-2xl">
+          Finalizing the apprentice program with local stonemasons. To build for the future, we must preserve the hands that know how to build from the past.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Chapter VII — CONVERSATION ===== -->
+<section class="bg-ink text-bone py-section-gap" id="conversation">
+  <div class="max-w-3xl mx-auto px-margin-mobile">
+    <div class="mb-16 md:mb-20 text-center reveal-text">
+      <div class="w-16 h-16 border border-brass rounded-full flex items-center justify-center mx-auto mb-8">
+        <span class="material-symbols-outlined text-brass">mail</span>
+      </div>
+      <h2 class="font-display-lg italic text-[40px] md:text-[48px]">A Conversation Begins.</h2>
+    </div>
+    <form class="space-y-12 md:space-y-16 font-body-md" id="inquiry-form" novalidate>
+      <p class="text-xl reveal-text">Dear Malom Invest,</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
+        <div class="border-b border-brass/40 pb-2 reveal-text">
+          <label for="f-name" class="font-label-caps text-[10px] text-brass block mb-2">MY NAME IS</label>
+          <input id="f-name" name="name" required class="bg-transparent border-none w-full focus:ring-0 p-0 text-xl placeholder:opacity-20 text-bone" placeholder="[ ENTER NAME ]" type="text"/>
+        </div>
+        <div class="border-b border-brass/40 pb-2 reveal-text">
+          <label for="f-email" class="font-label-caps text-[10px] text-brass block mb-2">AND MY COORDINATE IS</label>
+          <input id="f-email" name="email" required class="bg-transparent border-none w-full focus:ring-0 p-0 text-xl placeholder:opacity-20 text-bone" placeholder="[ EMAIL ADDRESS ]" type="email"/>
+        </div>
+      </div>
+      <div class="border-b border-brass/40 pb-2 reveal-text">
+        <label for="f-message" class="font-label-caps text-[10px] text-brass block mb-2">I AM INTERESTED IN DISCUSSING</label>
+        <textarea id="f-message" name="message" class="bg-transparent border-none w-full focus:ring-0 p-0 text-xl h-32 placeholder:opacity-20 resize-none text-bone" placeholder="[ YOUR MESSAGE TO OUR CURATORS ]"></textarea>
+      </div>
+      <div class="pt-8 flex flex-col items-center gap-8 reveal-text">
+        <div class="w-full h-px bg-brass/20"></div>
+        <button type="submit" class="font-label-caps text-label-caps tracking-[0.4em] hover:text-brass transition-all duration-500">
+          [ SEND THIS LETTER ]
+        </button>
+        <p id="form-status" class="font-label-caps text-[10px] text-brass tracking-widest h-4" role="status" aria-live="polite"></p>
+        <div class="w-32 h-px bg-brass"></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="w-full py-section-gap bg-bone border-t-2 border-double border-outline-variant text-center">
+  <div class="flex flex-col items-center gap-8 max-w-7xl mx-auto px-margin-desktop">
+    <div class="brand-lockup" aria-label="MALOM INVEST">
+      <svg class="brand-mark h-12" viewBox="0 0 360 380" aria-hidden="true">
+        <g fill="#4A6C8C">
+          <rect x="0" y="0" width="90" height="235"/>
+          <polygon points="0,0 90,0 245,235 155,235"/>
+          <polygon points="360,0 270,0 115,235 205,235"/>
+          <rect x="270" y="0" width="90" height="380"/>
+          <rect x="150" y="300" width="210" height="80"/>
+        </g>
+        <polygon fill="#9D9C90" points="95,252 143,300 95,348 47,300"/>
+      </svg>
+      <span class="wordmark">
+        <span class="wm-name text-[24px]">MALOM</span>
+        <span class="wm-sub text-[11px]">INVEST</span>
+      </span>
+    </div>
+    <p class="font-label-sm text-label-sm uppercase tracking-widest text-ink/60">END OF DOCUMENT · VII OF VII</p>
+    <nav class="flex flex-wrap justify-center gap-8 md:gap-12 my-8">
+      <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Colophon</a>
+      <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a>
+      <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Terms</a>
+      <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">Archive</a>
+    </nav>
+    <p class="font-body-md text-body-md italic text-on-surface/40">
+      MALOM INVEST. PRINTED IN SMALL BATCHES. ALL RIGHTS RESERVED.<br/>
+      ESTABLISHED MMXXIV.
+    </p>
+  </div>
+</footer>
+
+<script>
+  /* ===== Mobile menu ===== */
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const toggleSpans = menuToggle.querySelectorAll('span');
+
+  function setMenu(open) {
+    mobileMenu.classList.toggle('hidden-menu', !open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    document.body.style.overflow = open ? 'hidden' : '';
+    toggleSpans[0].style.transform = open ? 'translateY(6.5px) rotate(45deg)' : '';
+    toggleSpans[1].style.opacity = open ? '0' : '';
+    toggleSpans[2].style.transform = open ? 'translateY(-6.5px) rotate(-45deg)' : '';
+  }
+  menuToggle.addEventListener('click', () => setMenu(mobileMenu.classList.contains('hidden-menu')));
+  document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => setMenu(false)));
+
+  /* ===== Custom cursor (fine-pointer devices only) ===== */
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.body.classList.add('cursor-ready');
+    const cursor = document.getElementById('custom-cursor');
+    const trail = document.getElementById('custom-cursor-trail');
+    let mx = 0, my = 0, cx = 0, cy = 0, tx = 0, ty = 0;
+    window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+    (function loop() {
+      cx += (mx - cx) * 0.15; cy += (my - cy) * 0.15;
+      tx += (mx - tx) * 0.10; ty += (my - ty) * 0.10;
+      cursor.style.transform = `translate(${cx - 4}px, ${cy - 4}px)`;
+      trail.style.transform = `translate(${tx - 4}px, ${ty - 4}px)`;
+      requestAnimationFrame(loop);
+    })();
+    document.querySelectorAll('a, button, input, textarea, .brass-seal').forEach(el => {
+      el.addEventListener('mouseenter', () => document.body.classList.add('interactive-hover'));
+      el.addEventListener('mouseleave', () => document.body.classList.remove('interactive-hover'));
+    });
+  }
+
+  /* ===== Scroll reveal ===== */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal-text, .image-reveal, .roman-watermark').forEach(el => revealObserver.observe(el));
+
+  /* ===== Active nav highlighting ===== */
+  const sections = document.querySelectorAll('section, header[id]');
+  const navLinks = document.querySelectorAll('#desktop-nav a');
+  function updateNav() {
+    let current = '';
+    sections.forEach(section => {
+      if (window.pageYOffset >= section.offsetTop - 150) current = section.getAttribute('id');
+    });
+    navLinks.forEach(link => {
+      const active = link.getAttribute('href') === '#' + current;
+      link.classList.toggle('text-primary', active);
+      link.classList.toggle('border-b', active);
+      link.classList.toggle('border-primary', active);
+      link.classList.toggle('text-on-surface-variant', !active);
+    });
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+
+  /* ===== Inquiry form (front-end demo handling) ===== */
+  const form = document.getElementById('inquiry-form');
+  const status = document.getElementById('form-status');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      status.textContent = 'PLEASE COMPLETE NAME AND A VALID COORDINATE.';
+      status.classList.remove('text-brass'); status.classList.add('text-error');
+      return;
+    }
+    status.classList.remove('text-error'); status.classList.add('text-brass');
+    status.textContent = 'YOUR LETTER HAS BEEN SEALED AND SENT. THANK YOU.';
+    form.reset();
+  });
+</script>
+</body>
+</html>

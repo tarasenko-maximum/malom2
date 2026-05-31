@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" role="img" aria-label="Tatar Hill">
+  <g fill="#9D9C90">
+    <rect x="18" y="15" width="264" height="52"/>
+    <polygon points="124,67 176,67 176,162 158,162 158,150 142,150 142,162 124,162"/>
+    <rect x="60" y="100" width="52" height="205"/>
+    <rect x="188" y="100" width="52" height="205"/>
+    <rect x="60" y="210" width="180" height="52"/>
+    <polygon points="150,266 176,292 150,318 124,292"/>
+  </g>
+</svg>

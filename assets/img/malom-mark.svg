@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 380" role="img" aria-label="MALOM">
+  <g fill="#4A6C8C">
+    <rect x="0" y="0" width="90" height="235"/>
+    <polygon points="0,0 90,0 245,235 155,235"/>
+    <polygon points="360,0 270,0 115,235 205,235"/>
+    <rect x="270" y="0" width="90" height="380"/>
+    <rect x="150" y="300" width="210" height="80"/>
+  </g>
+  <polygon fill="#9D9C90" points="95,252 143,300 95,348 47,300"/>
+</svg>
