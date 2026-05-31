@@ -11,3 +11,5 @@ desktop.ini
 *.log
 .idea/
 .vscode/
+
+.vercel
